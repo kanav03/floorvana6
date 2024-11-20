@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -608,26 +608,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2PB-Rn-Vbw">
-                                <rect key="frame" x="16" y="489" width="361" height="61"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-J4-J9f">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="28.666666666666668"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQS-iw-7Gy">
-                                        <rect key="frame" x="0.0" y="40.666666666666629" width="361" height="20.333333333333329"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
-                                        </accessibility>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.1484035437" blue="0.00090441950670000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unB-Mj-iuI">
                                 <rect key="frame" x="34" y="704" width="325" height="50"/>
                                 <constraints>
@@ -647,26 +627,21 @@
                         <viewLayoutGuide key="safeArea" id="voS-62-N4o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="unB-Mj-iuI" firstAttribute="centerX" secondItem="XUv-Cg-e2b" secondAttribute="centerX" id="4IU-RG-tmo"/>
                             <constraint firstItem="voS-62-N4o" firstAttribute="bottom" secondItem="unB-Mj-iuI" secondAttribute="bottom" constant="88" id="9xA-HG-NYc"/>
-                            <constraint firstItem="2PB-Rn-Vbw" firstAttribute="top" secondItem="XUv-Cg-e2b" secondAttribute="bottom" constant="70" id="MEl-CW-b2Z"/>
                             <constraint firstItem="afV-qr-arY" firstAttribute="top" secondItem="voS-62-N4o" secondAttribute="top" constant="50" id="OyD-ac-gb1"/>
                             <constraint firstItem="voS-62-N4o" firstAttribute="trailing" secondItem="XUv-Cg-e2b" secondAttribute="trailing" constant="16" id="Oza-8W-Kze"/>
-                            <constraint firstItem="2PB-Rn-Vbw" firstAttribute="leading" secondItem="voS-62-N4o" secondAttribute="leading" constant="16" id="Rch-a3-9fI"/>
                             <constraint firstItem="XUv-Cg-e2b" firstAttribute="top" secondItem="afV-qr-arY" secondAttribute="bottom" constant="59" id="TU4-mE-tKL"/>
                             <constraint firstItem="XUv-Cg-e2b" firstAttribute="leading" secondItem="voS-62-N4o" secondAttribute="leading" constant="16" id="hyG-uF-rBq"/>
                             <constraint firstItem="afV-qr-arY" firstAttribute="centerX" secondItem="UUi-QG-dKn" secondAttribute="centerX" id="l5b-kH-mkD"/>
-                            <constraint firstItem="unB-Mj-iuI" firstAttribute="centerX" secondItem="2PB-Rn-Vbw" secondAttribute="centerX" id="oPh-ya-EoN"/>
-                            <constraint firstItem="voS-62-N4o" firstAttribute="trailing" secondItem="2PB-Rn-Vbw" secondAttribute="trailing" constant="16" id="pUM-uk-q3H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="zE8-t4-S7c"/>
                     <connections>
-                        <outlet property="deleteAccountLabel" destination="cQS-iw-7Gy" id="aeH-wF-VKP"/>
                         <outlet property="emailLabel" destination="YGQ-52-zCH" id="6dI-Te-0ye"/>
                         <outlet property="logoutButton" destination="unB-Mj-iuI" id="1ue-hM-2Ci"/>
                         <outlet property="phoneLabel" destination="PmI-uH-CCb" id="uSN-GF-dMK"/>
                         <outlet property="profileImageView" destination="afV-qr-arY" id="07f-vS-c8K"/>
-                        <outlet property="settingsLabel" destination="bZQ-J4-J9f" id="eoH-B7-eof"/>
                         <outlet property="usernameLabel" destination="g0d-dl-eJX" id="bwc-17-tBE"/>
                     </connections>
                 </viewController>
@@ -1164,17 +1139,9 @@
                                                 <color key="textColor" red="0.20000001789999999" green="0.20000001789999999" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnI-bV-U0D">
-                                                <rect key="frame" x="107" y="550" width="178" height="35"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Have Another Plan ?">
-                                                    <color key="baseForegroundColor" red="0.20000001789999999" green="0.20000001789999999" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="nnI-bV-U0D" firstAttribute="top" secondItem="Vqa-gj-dX1" secondAttribute="bottom" constant="37" id="0W9-Rs-pz8"/>
                                             <constraint firstAttribute="bottom" secondItem="k1X-Uv-WrX" secondAttribute="bottom" constant="112" id="8zR-Nc-yty"/>
                                             <constraint firstItem="Vqa-gj-dX1" firstAttribute="centerY" secondItem="dLe-FU-VLO" secondAttribute="centerY" constant="-91.5" id="9NQ-vA-xIF"/>
                                             <constraint firstAttribute="trailing" secondItem="tYY-i9-KwY" secondAttribute="trailing" constant="25" id="D0t-Gj-axW"/>
@@ -1184,11 +1151,9 @@
                                             <constraint firstItem="tYY-i9-KwY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dLe-FU-VLO" secondAttribute="leading" constant="20" symbolic="YES" id="XlI-na-6ab"/>
                                             <constraint firstItem="k1X-Uv-WrX" firstAttribute="centerX" secondItem="Vqa-gj-dX1" secondAttribute="centerX" id="dkb-S2-lOb"/>
                                             <constraint firstItem="fKG-7r-Rff" firstAttribute="top" secondItem="dLe-FU-VLO" secondAttribute="top" constant="23" id="eYB-kh-V0d"/>
-                                            <constraint firstItem="nnI-bV-U0D" firstAttribute="leading" secondItem="dLe-FU-VLO" secondAttribute="leading" constant="107" id="ghS-cq-POX"/>
                                             <constraint firstItem="tYY-i9-KwY" firstAttribute="top" secondItem="dLe-FU-VLO" secondAttribute="top" constant="104" id="l28-30-MXK"/>
                                             <constraint firstItem="fKG-7r-Rff" firstAttribute="leading" secondItem="dLe-FU-VLO" secondAttribute="leading" constant="20" id="lua-Pv-ofr"/>
                                             <constraint firstItem="Vqa-gj-dX1" firstAttribute="centerX" secondItem="dLe-FU-VLO" secondAttribute="centerX" id="ogu-Sd-dGn"/>
-                                            <constraint firstAttribute="trailing" secondItem="nnI-bV-U0D" secondAttribute="trailing" constant="108" id="pue-Nt-Cmr"/>
                                             <constraint firstItem="Vqa-gj-dX1" firstAttribute="top" secondItem="fKG-7r-Rff" secondAttribute="bottom" constant="28" id="vKs-iz-YSe"/>
                                         </constraints>
                                     </view>
@@ -2490,6 +2455,7 @@
             <point key="canvasLocation" x="10457" y="317"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.78039217000000005" green="0.68627452850000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="AppleLogo" width="3840" height="2160"/>
         <image name="GoogleLogo" width="512" height="512"/>
