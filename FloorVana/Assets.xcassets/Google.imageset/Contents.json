@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "f4292a94-c6db-4b03-8acf-2455ff969304.JPG",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "google@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
